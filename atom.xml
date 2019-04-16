@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>JKcheng&#39;s Blog</title>
+  
+  <subtitle>Java技术升级打怪之路</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-04-16T11:14:18.350Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>JKcheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JVM中的垃圾回收机制</title>
+    <link href="http://yoursite.com/2019/04/16/20190326/"/>
+    <id>http://yoursite.com/2019/04/16/20190326/</id>
+    <published>2019-04-16T11:33:47.895Z</published>
+    <updated>2019-04-16T11:14:18.350Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;在Java中，由于引入了JVM,所以我们不用再向C/C++那样创建对象之后手动的去申请和释放内存，这一切都交给了虚拟机来完成，而为了我们更好的了解对象的内存分配情况，更是为了优化系统，所以我们必然要去了解JVM的内存结构以及垃圾回收机制。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="JVM" scheme="http://yoursite.com/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="http://yoursite.com/tags/JVM/"/>
+    
+  </entry>
+  
+</feed>
