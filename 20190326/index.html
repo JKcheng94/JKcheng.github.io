@@ -90,12 +90,11 @@
 <meta property="og:description" content="在Java中，由于引入了JVM,所以我们不用再向C/C++那样创建对象之后手动的去申请和释放内存，这一切都交给了虚拟机来完成，而为了我们更好的了解对象的内存分配情况，更是为了优化系统，所以我们必然要去了解JVM的内存结构以及垃圾回收机制。  JVM内存结构我们通过两张图来记忆其内存结构： JVM内存分为五部分：  线程私有的：虚拟机栈、本地方法栈、程序计数器 虚拟机栈：是由多个栈帧组成的，jav">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://jkcheng94.github.io/uploads/0018_JVM内存结构.png">
-<meta property="og:image" content="https://jkcheng94.github.io/uploads/0018_JVM内存结构.png">
 <meta property="og:image" content="https://jkcheng94.github.io/uploads/0019_jvm内存.png">
 <meta property="og:image" content="https://jkcheng94.github.io/uploads/0020_复制算法.png">
 <meta property="og:image" content="https://jkcheng94.github.io/uploads/0021_标记清除算法.png">
 <meta property="og:image" content="https://jkcheng94.github.io/uploads/0022_标记整理算法.png">
-<meta property="og:updated_time" content="2019-04-16T13:14:49.691Z">
+<meta property="og:updated_time" content="2019-04-16T13:27:00.971Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JVM中的垃圾回收机制">
 <meta name="twitter:description" content="在Java中，由于引入了JVM,所以我们不用再向C/C++那样创建对象之后手动的去申请和释放内存，这一切都交给了虚拟机来完成，而为了我们更好的了解对象的内存分配情况，更是为了优化系统，所以我们必然要去了解JVM的内存结构以及垃圾回收机制。  JVM内存结构我们通过两张图来记忆其内存结构： JVM内存分为五部分：  线程私有的：虚拟机栈、本地方法栈、程序计数器 虚拟机栈：是由多个栈帧组成的，jav">
@@ -416,7 +415,7 @@
         <blockquote>
 <p>在Java中，由于引入了JVM,所以我们不用再向C/C++那样创建对象之后手动的去申请和释放内存，这一切都交给了虚拟机来完成，而为了我们更好的了解对象的内存分配情况，更是为了优化系统，所以我们必然要去了解JVM的内存结构以及垃圾回收机制。</p>
 </blockquote>
-<h2 id="JVM内存结构"><a href="#JVM内存结构" class="headerlink" title="JVM内存结构"></a>JVM内存结构</h2><p>我们通过两张图来记忆其内存结构：<br><img src="../uploads/0018_JVM内存结构.png"><br><img src="../uploads/0018_JVM内存结构.png" alt="JVM-memory-structure"><br><img src="../uploads/0019_jvm内存.png" alt="jvm-memory"></p>
+<h2 id="JVM内存结构"><a href="#JVM内存结构" class="headerlink" title="JVM内存结构"></a>JVM内存结构</h2><p>我们通过两张图来记忆其内存结构：<br><img src="../uploads/0018_JVM内存结构.png" alt="JVM-memory-structure"><br><img src="../uploads/0019_jvm内存.png" alt="jvm-memory"></p>
 <p>JVM内存分为五部分：</p>
 <ul>
 <li>线程私有的：虚拟机栈、本地方法栈、程序计数器<ol>
